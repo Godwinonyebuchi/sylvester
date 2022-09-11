@@ -1,0 +1,67 @@
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ background-image: url(commerce.png);
+    background-size: cover; background-position: center;
+    font-family: sans-serif; 
+}
+.menu-header{ text-align: center; 
+}
+.menu-header ul{ display: inline-flex; 
+    list-style: none; 
+}
+.menu-header ul li{
+    padding: 15px; margin: 15px;
+    width: 120px;
+}
+.menu-header ul li a{ text-decoration: none; color: aqua  ;
+}
+.active,.menu-header ul li:hover{background-color: #2bab0d;
+    border-radius: 3px;
+}
+.menu-header .fa-phone{ color: rgb(15, 241, 83);
+} 
+.menu-header .fa-clone{ color: dimgrey; font-size: 15px;
+}
+.menu-header .fa{
+    margin-right: 8px;
+}
+/* sub menus */
+
+.sub-menue-1{ display: none; 
+}
+.sub-menue-1 ul li a{ 
+    color: azure;
+}
+.menu-header ul li:hover .sub-menue-1{ display: block; position: absolute;
+    background-color: rgb(14, 250, 14); margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-header ul li:hover .sub-menue-1 ul{ margin: 10px;
+    display: block;
+}
+.menu-header ul li:hover .sub-menue-1 ul li{ width: 150px;padding: 10px;
+    border-bottom: 1px dotted rgb(245, 119, 161);
+    border-radius: 0; background: transparent; 
+    text-align: left;
+}
+.menu-header ul li:hover .sub-menue-1 ul li :last-child{
+    border-bottom: none;
+}
+.menu-header ul li:hover .sub-menue-1 ul li a:hover{
+    color: chocolate;
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menue-2{
+    display: none;
+}
+.hover-me:hover .sub-menue-2{display: block; margin-top: -40px;
+    position: absolute; margin-left: 140px;
+    background: blueviolet;
+}
+
+
